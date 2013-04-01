@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/routing"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/task"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/weatherboard" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/status_connected"
+        android:textColor="#11ff11" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1" 
+        android:layout_marginTop="7dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/temp" />
+
+        <TextView
+            android:id="@+id/textViewTemp"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/decdefault" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="@string/temperatureUnits" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/humidity" />
+
+        <TextView
+            android:id="@+id/textViewHum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/decdefault"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="@string/rhUnits"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/light" />
+
+        <TextView
+            android:id="@+id/textViewLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/lightdefault"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task"
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/instructions"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/instruction"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="10dp"
+        android:text="@string/today_task"
+        android:textColor="@color/Blue"
+        android:textSize="30sp" />
+
+</RelativeLayout>

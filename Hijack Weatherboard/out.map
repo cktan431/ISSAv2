@@ -1,0 +1,819 @@
+Archive member included because of file (symbol)
+
+d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_reset_vector__.o)
+                              d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16/crt0ivtbl16.o (_reset_vector__)
+d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__watchdog_support.o)
+                              d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_reset_vector__.o) (__watchdog_support)
+d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__init_stack.o)
+                              d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_reset_vector__.o) (__init_stack)
+d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__low_level_init.o)
+                              d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_reset_vector__.o) (__low_level_init)
+d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_copy_data.o)
+                              d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_reset_vector__.o) (__do_copy_data)
+d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_clear_bss.o)
+                              d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_reset_vector__.o) (__do_clear_bss)
+d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__stop_progExec__.o)
+                              d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_reset_vector__.o) (__stop_progExec__)
+d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_endless_loop__.o)
+                              d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_reset_vector__.o) (_endless_loop__)
+d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_unexpected_.o)
+                              d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16/crt0ivtbl16.o (_unexpected_)
+
+Allocating common symbols
+Common symbol       size              file
+
+fe_state            0x6c              build/src/main.o
+pal_captureTimerCbPtr
+                    0x2               build/src/lib/pal.o
+csm_state           0x2c              build/src/codingStateMachine.o
+xmit                0x2               build/src/main.o
+timer_periodicCbPtr
+                    0x2               build/src/lib/pal.o
+timer_captureCbPtr  0x2               build/src/lib/pal.o
+pal_periodicTimerCbPtr
+                    0x2               build/src/lib/pal.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+sfr              0x00000000         0x00000010
+peripheral_8bit  0x00000010         0x000000f0
+peripheral_16bit 0x00000100         0x00000100
+ram_mirror       0x00000200         0x00000800         xw
+infomem          0x00001000         0x00000100
+infob            0x00001000         0x00000080
+infoa            0x00001080         0x00000080
+ram              0x00001100         0x00002800         xw
+rom              0x00004000         0x0000bfe0         xr
+vectors          0x0000ffe0         0x00000020
+bsl              0x00000000         0x00000000
+infoc            0x00000000         0x00000000
+infod            0x00000000         0x00000000
+ram2             0x00000000         0x00000000         xw
+usbram           0x00000000         0x00000000         xw
+far_rom          0x00000000         0x00000000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16/crt0ivtbl16.o
+LOAD build/src/codingStateMachine.o
+LOAD build/src/main.o
+LOAD build/src/framingEngine.o
+LOAD build/src/lib/pal.o
+LOAD build/src/peripherals/msp/adc.o
+LOAD build/src/peripherals/msp/ptimer.o
+LOAD build/src/peripherals/msp/analog.o
+LOAD build/src/peripherals/msp/utility.o
+LOAD build/src/peripherals/msp/ctimer.o
+LOAD build/src/peripherals/msp/gpio.o
+LOAD build/src/peripherals/msp/interrupt.o
+LOAD build/src/peripherals/msp/f1611_timer.o
+LOAD build/src/peripherals/msp/comparator.o
+LOAD build/src/peripherals/msp/reference.o
+LOAD d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libgcc.a
+LOAD d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/../../../../msp430/lib/mmpy-16\libc.a
+LOAD d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libgcc.a
+LOAD d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a
+                0x00000080                PROVIDE (__info_segment_size, 0x80)
+                0x00001000                PROVIDE (__infob, 0x1000)
+                0x00001080                PROVIDE (__infoa, 0x1080)
+                0x00000000                __IE1 = 0x0
+                0x00000002                __IFG1 = 0x2
+                0x00000004                __ME1 = 0x4
+                0x00000001                __IE2 = 0x1
+                0x00000003                __IFG2 = 0x3
+                0x00000005                __ME2 = 0x5
+                0x00000120                __WDTCTL = 0x120
+                0x00000130                __MPY = 0x130
+                0x00000132                __MPYS = 0x132
+                0x00000134                __MAC = 0x134
+                0x00000136                __MACS = 0x136
+                0x00000138                __OP2 = 0x138
+                0x0000013a                __RESLO = 0x13a
+                0x0000013c                __RESHI = 0x13c
+                0x0000013e                __SUMEXT = 0x13e
+                0x00000020                __P1IN = 0x20
+                0x00000021                __P1OUT = 0x21
+                0x00000022                __P1DIR = 0x22
+                0x00000023                __P1IFG = 0x23
+                0x00000024                __P1IES = 0x24
+                0x00000025                __P1IE = 0x25
+                0x00000026                __P1SEL = 0x26
+                0x00000028                __P2IN = 0x28
+                0x00000029                __P2OUT = 0x29
+                0x0000002a                __P2DIR = 0x2a
+                0x0000002b                __P2IFG = 0x2b
+                0x0000002c                __P2IES = 0x2c
+                0x0000002d                __P2IE = 0x2d
+                0x0000002e                __P2SEL = 0x2e
+                0x00000018                __P3IN = 0x18
+                0x00000019                __P3OUT = 0x19
+                0x0000001a                __P3DIR = 0x1a
+                0x0000001b                __P3SEL = 0x1b
+                0x0000001c                __P4IN = 0x1c
+                0x0000001d                __P4OUT = 0x1d
+                0x0000001e                __P4DIR = 0x1e
+                0x0000001f                __P4SEL = 0x1f
+                0x00000030                __P5IN = 0x30
+                0x00000031                __P5OUT = 0x31
+                0x00000032                __P5DIR = 0x32
+                0x00000033                __P5SEL = 0x33
+                0x00000034                __P6IN = 0x34
+                0x00000035                __P6OUT = 0x35
+                0x00000036                __P6DIR = 0x36
+                0x00000037                __P6SEL = 0x37
+                0x00000070                __U0CTL = 0x70
+                0x00000071                __U0TCTL = 0x71
+                0x00000072                __U0RCTL = 0x72
+                0x00000073                __U0MCTL = 0x73
+                0x00000074                __U0BR0 = 0x74
+                0x00000075                __U0BR1 = 0x75
+                0x00000076                __U0RXBUF = 0x76
+                0x00000077                __U0TXBUF = 0x77
+                0x00000078                __U1CTL = 0x78
+                0x00000079                __U1TCTL = 0x79
+                0x0000007a                __U1RCTL = 0x7a
+                0x0000007b                __U1MCTL = 0x7b
+                0x0000007c                __U1BR0 = 0x7c
+                0x0000007d                __U1BR1 = 0x7d
+                0x0000007e                __U1RXBUF = 0x7e
+                0x0000007f                __U1TXBUF = 0x7f
+                0x00000050                __I2CIE = 0x50
+                0x00000051                __I2CIFG = 0x51
+                0x00000052                __I2CNDAT = 0x52
+                0x00000071                __I2CTCTL = 0x71
+                0x00000072                __I2CDCTL = 0x72
+                0x00000073                __I2CPSC = 0x73
+                0x00000074                __I2CSCLH = 0x74
+                0x00000075                __I2CSCLL = 0x75
+                0x00000076                __I2CDRB = 0x76
+                0x00000076                __I2CDRW = 0x76
+                0x00000118                __I2COA = 0x118
+                0x0000011a                __I2CSA = 0x11a
+                0x0000011c                __I2CIV = 0x11c
+                0x0000012e                __TAIV = 0x12e
+                0x00000160                __TACTL = 0x160
+                0x00000162                __TACCTL0 = 0x162
+                0x00000164                __TACCTL1 = 0x164
+                0x00000166                __TACCTL2 = 0x166
+                0x00000170                __TAR = 0x170
+                0x00000172                __TACCR0 = 0x172
+                0x00000174                __TACCR1 = 0x174
+                0x00000176                __TACCR2 = 0x176
+                0x0000011e                __TBIV = 0x11e
+                0x00000180                __TBCTL = 0x180
+                0x00000182                __TBCCTL0 = 0x182
+                0x00000184                __TBCCTL1 = 0x184
+                0x00000186                __TBCCTL2 = 0x186
+                0x00000188                __TBCCTL3 = 0x188
+                0x0000018a                __TBCCTL4 = 0x18a
+                0x0000018c                __TBCCTL5 = 0x18c
+                0x0000018e                __TBCCTL6 = 0x18e
+                0x00000190                __TBR = 0x190
+                0x00000192                __TBCCR0 = 0x192
+                0x00000194                __TBCCR1 = 0x194
+                0x00000196                __TBCCR2 = 0x196
+                0x00000198                __TBCCR3 = 0x198
+                0x0000019a                __TBCCR4 = 0x19a
+                0x0000019c                __TBCCR5 = 0x19c
+                0x0000019e                __TBCCR6 = 0x19e
+                0x00000056                __DCOCTL = 0x56
+                0x00000057                __BCSCTL1 = 0x57
+                0x00000058                __BCSCTL2 = 0x58
+                0x00000055                __SVSCTL = 0x55
+                0x00000128                __FCTL1 = 0x128
+                0x0000012a                __FCTL2 = 0x12a
+                0x0000012c                __FCTL3 = 0x12c
+                0x00000059                __CACTL1 = 0x59
+                0x0000005a                __CACTL2 = 0x5a
+                0x0000005b                __CAPD = 0x5b
+                0x000001a0                __ADC12CTL0 = 0x1a0
+                0x000001a2                __ADC12CTL1 = 0x1a2
+                0x000001a4                __ADC12IFG = 0x1a4
+                0x000001a6                __ADC12IE = 0x1a6
+                0x000001a8                __ADC12IV = 0x1a8
+                0x00000140                __ADC12MEM0 = 0x140
+                0x00000142                __ADC12MEM1 = 0x142
+                0x00000144                __ADC12MEM2 = 0x144
+                0x00000146                __ADC12MEM3 = 0x146
+                0x00000148                __ADC12MEM4 = 0x148
+                0x0000014a                __ADC12MEM5 = 0x14a
+                0x0000014c                __ADC12MEM6 = 0x14c
+                0x0000014e                __ADC12MEM7 = 0x14e
+                0x00000150                __ADC12MEM8 = 0x150
+                0x00000152                __ADC12MEM9 = 0x152
+                0x00000154                __ADC12MEM10 = 0x154
+                0x00000156                __ADC12MEM11 = 0x156
+                0x00000158                __ADC12MEM12 = 0x158
+                0x0000015a                __ADC12MEM13 = 0x15a
+                0x0000015c                __ADC12MEM14 = 0x15c
+                0x0000015e                __ADC12MEM15 = 0x15e
+                0x00000080                __ADC12MCTL0 = 0x80
+                0x00000081                __ADC12MCTL1 = 0x81
+                0x00000082                __ADC12MCTL2 = 0x82
+                0x00000083                __ADC12MCTL3 = 0x83
+                0x00000084                __ADC12MCTL4 = 0x84
+                0x00000085                __ADC12MCTL5 = 0x85
+                0x00000086                __ADC12MCTL6 = 0x86
+                0x00000087                __ADC12MCTL7 = 0x87
+                0x00000088                __ADC12MCTL8 = 0x88
+                0x00000089                __ADC12MCTL9 = 0x89
+                0x0000008a                __ADC12MCTL10 = 0x8a
+                0x0000008b                __ADC12MCTL11 = 0x8b
+                0x0000008c                __ADC12MCTL12 = 0x8c
+                0x0000008d                __ADC12MCTL13 = 0x8d
+                0x0000008e                __ADC12MCTL14 = 0x8e
+                0x0000008f                __ADC12MCTL15 = 0x8f
+                0x000001c0                __DAC12_0CTL = 0x1c0
+                0x000001c2                __DAC12_1CTL = 0x1c2
+                0x000001c8                __DAC12_0DAT = 0x1c8
+                0x000001ca                __DAC12_1DAT = 0x1ca
+                0x00000122                __DMACTL0 = 0x122
+                0x00000124                __DMACTL1 = 0x124
+                0x000001e0                __DMA0CTL = 0x1e0
+                0x000001e8                __DMA1CTL = 0x1e8
+                0x000001f0                __DMA2CTL = 0x1f0
+                0x000001e2                __DMA0SA = 0x1e2
+                0x000001e4                __DMA0DA = 0x1e4
+                0x000001e6                __DMA0SZ = 0x1e6
+                0x000001ea                __DMA1SA = 0x1ea
+                0x000001ec                __DMA1DA = 0x1ec
+                0x000001ee                __DMA1SZ = 0x1ee
+                0x000001f2                __DMA2SA = 0x1f2
+                0x000001f4                __DMA2DA = 0x1f4
+                0x000001f6                __DMA2SZ = 0x1f6
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.text
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+
+.rela.text
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+
+.rel.rodata
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+
+.rela.rodata
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+
+.rel.data
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+
+.rela.data
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+
+.rel.bss
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+
+.rela.bss
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00004000      0xcca
+                0x00004000                . = ALIGN (0x2)
+ *(.init .init.*)
+ *(.init0)
+ .init0         0x00004000        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_reset_vector__.o)
+                0x00004000                _reset_vector__
+ *(.init1)
+ .init1         0x00004000        0xc d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__watchdog_support.o)
+                0x00004000                __watchdog_support
+ *(.init2)
+ .init2         0x0000400c        0x4 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__init_stack.o)
+                0x0000400c                __init_stack
+ *(.init3)
+ .init3         0x00004010        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__low_level_init.o)
+                0x00004010                __low_level_init
+ *(.init4)
+ .init4         0x00004010       0x18 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_copy_data.o)
+                0x00004010                __do_copy_data
+ .init4         0x00004028       0x16 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_clear_bss.o)
+                0x00004028                __do_clear_bss
+ *(.init5)
+ *(.init6)
+ *(.init7)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000403e       0x8a build/src/main.o
+                0x0000403e                main
+ *(.fini9)
+ .fini9         0x000040c8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__stop_progExec__.o)
+                0x000040c8                __stop_progExec__
+ *(.fini8)
+ *(.fini7)
+ *(.fini6)
+ *(.fini5)
+ *(.fini4)
+ *(.fini3)
+ *(.fini2)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000040c8        0x6 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_endless_loop__.o)
+                0x000040c8                _endless_loop__
+ *(.fini .fini.*)
+                0x000040ce                . = ALIGN (0x2)
+                0x000040ce                __ctors_start = .
+ *(.ctors)
+                0x000040ce                __ctors_end = .
+                0x000040ce                __dtors_start = .
+ *(.dtors)
+                0x000040ce                __dtors_end = .
+                0x000040ce                . = ALIGN (0x2)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x000040ce        0x4 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16/crt0ivtbl16.o
+                0x000040ce                __isr_14
+                0x000040ce                __isr_4
+                0x000040ce                __isr_11
+                0x000040ce                __isr_2
+                0x000040ce                __isr_10
+                0x000040ce                __isr_0
+                0x000040ce                __isr_3
+                0x000040ce                __isr_13
+                0x000040ce                __isr_9
+                0x000040ce                __isr_6
+                0x000040ce                __isr_1
+ .text.crt0     0x000040d2        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16/crt0ivtbl16.o
+ .text          0x000040d2      0x33a build/src/codingStateMachine.o
+                0x000040d2                csm_transmitIdle
+                0x000040ea                csm_transmitData
+                0x00004128                csm_transmitPending
+                0x0000413c                csm_receiveIdle
+                0x00004176                csm_receiveTiming
+                0x000041a0                csm_registerReceiveByte
+                0x000041a6                csm_registerTransmitByte
+                0x000041ac                csm_advanceTransmitState
+                0x000041b8                csm_finishAdvanceTransmitState
+                0x000041d8                csm_sendByte
+                0x00004224                csm_init
+                0x00004280                csm_isWithinThreshold
+                0x000042a0                csm_calcByteParity
+                0x000042c6                csm_advanceReceiveDataState
+                0x0000432e                csm_receiveDataNext
+                0x00004392                csm_receiveData
+ .text          0x0000440c      0x260 build/src/main.o
+                0x0000440c                packetSentCallback
+                0x0000441a                captureTimerFn
+                0x00004436                periodicTimerFn
+                0x0000445e                packetReceivedCallback
+                0x000044bc                updateAnalogOutputBuffer
+                0x000044fa                updateDigitalOutputBuffer
+                0x0000451c                initializeSystem
+                0x00004576                __isr_7
+                0x00004576                ADC12_ISR
+                0x000045ba                I2C_IV
+                0x000045ba                __isr_8
+ .text          0x0000466c      0x1e4 build/src/framingEngine.o
+                0x0000466c                fe_init
+                0x0000468e                fe_writeTxBuffer
+                0x000046b0                fe_registerPacketReceivedCb
+                0x000046b6                fe_registerPacketSentCb
+                0x000046bc                fe_registerByteSender
+                0x000046c2                fe_checkPacket
+                0x00004716                fe_handleByteReceived
+                0x0000478c                fe_buildTransmitBuffer
+                0x0000480e                fe_handleByteSent
+                0x00004846                fe_startSending
+ .text          0x00004850      0x138 build/src/lib/pal.o
+                0x00004850                pal_periodicTimerFn
+                0x0000485c                pal_captureTimerFn
+                0x0000487e                pal_registerPeriodicTimerCb
+                0x00004884                pal_registerCaptureTimerCb
+                0x0000488a                pal_init
+                0x00004898                pal_sampleAnalogGpios
+                0x0000489e                pal_readDigitalGpio
+                0x000048c2                pal_setDigitalGpio
+                0x0000492a                pal_readAnalogGpio
+                0x00004954                pal_startTimers
+                0x00004976                pal_loopDelay
+ .text          0x00004988        0x0 build/src/peripherals/msp/adc.o
+ .text          0x00004988        0x0 build/src/peripherals/msp/ptimer.o
+ .text          0x00004988        0x8 build/src/peripherals/msp/analog.o
+                0x00004988                analog_init
+                0x0000498a                analog_sampleAll
+                0x0000498c                analog_readInput
+ .text          0x00004990       0xb4 build/src/peripherals/msp/utility.o
+                0x00004990                delay
+                0x000049a8                util_disableWatchdog
+                0x000049b0                util_boardInit
+                0x00004a10                util_enableInterrupt
+                0x00004a14                util_disableInterrupt
+                0x00004a1a                util_delayMs
+                0x00004a30                util_delayCycles
+ .text          0x00004a44        0x0 build/src/peripherals/msp/ctimer.o
+ .text          0x00004a44      0x1ce build/src/peripherals/msp/gpio.o
+                0x00004a44                gpio_init
+                0x00004ac0                gpio_set_clear
+                0x00004b4c                gpio_set
+                0x00004b54                gpio_clear
+                0x00004b5c                gpio_read
+                0x00004be8                gpio_toggle
+ .text          0x00004c12        0x0 build/src/peripherals/msp/interrupt.o
+ .text          0x00004c12       0xb6 build/src/peripherals/msp/f1611_timer.o
+                0x00004c12                timer_init
+                0x00004c40                timer_start
+                0x00004c4e                timer_setCaptureCallback
+                0x00004c54                timer_setPeriodicCallback
+                0x00004c5a                timer_stop
+                0x00004c68                timer_readCaptureLine
+                0x00004c76                Timer_A1
+                0x00004c76                __isr_5
+                0x00004ca6                __isr_12
+                0x00004ca6                Timer_B1
+ .text          0x00004cc8        0x0 build/src/peripherals/msp/comparator.o
+ .text          0x00004cc8        0x0 build/src/peripherals/msp/reference.o
+ .text          0x00004cc8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_reset_vector__.o)
+ .text          0x00004cc8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__watchdog_support.o)
+ .text          0x00004cc8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__init_stack.o)
+ .text          0x00004cc8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__low_level_init.o)
+ .text          0x00004cc8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_copy_data.o)
+ .text          0x00004cc8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_clear_bss.o)
+ .text          0x00004cc8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__stop_progExec__.o)
+ .text          0x00004cc8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_endless_loop__.o)
+ .text          0x00004cc8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_unexpected_.o)
+ .text.crt0     0x00004cc8        0x2 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_unexpected_.o)
+                0x00004cc8                _unexpected_
+                0x00004cca                . = ALIGN (0x2)
+
+.rodata         0x00004cca       0x36
+                0x00004cca                . = ALIGN (0x2)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00004cca        0xc build/src/lib/pal.o
+ .rodata        0x00004cd6       0x2a build/src/peripherals/msp/gpio.o
+                0x00004d00                . = ALIGN (0x2)
+                0x00004d00                _etext = .
+
+.data           0x00001100        0xa load address 0x00004d00
+                0x00001100                . = ALIGN (0x2)
+                0x00001100                PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00001100        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16/crt0ivtbl16.o
+ .data          0x00001100        0x0 build/src/codingStateMachine.o
+ .data          0x00001100        0x9 build/src/main.o
+                0x00001100                outMessage
+ .data          0x00001109        0x0 build/src/framingEngine.o
+ .data          0x00001109        0x0 build/src/lib/pal.o
+ .data          0x00001109        0x0 build/src/peripherals/msp/adc.o
+ .data          0x00001109        0x0 build/src/peripherals/msp/ptimer.o
+ .data          0x00001109        0x0 build/src/peripherals/msp/analog.o
+ .data          0x00001109        0x0 build/src/peripherals/msp/utility.o
+ .data          0x00001109        0x0 build/src/peripherals/msp/ctimer.o
+ .data          0x00001109        0x0 build/src/peripherals/msp/gpio.o
+ .data          0x00001109        0x0 build/src/peripherals/msp/interrupt.o
+ .data          0x00001109        0x0 build/src/peripherals/msp/f1611_timer.o
+ .data          0x00001109        0x0 build/src/peripherals/msp/comparator.o
+ .data          0x00001109        0x0 build/src/peripherals/msp/reference.o
+ .data          0x00001109        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_reset_vector__.o)
+ .data          0x00001109        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__watchdog_support.o)
+ .data          0x00001109        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__init_stack.o)
+ .data          0x00001109        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__low_level_init.o)
+ .data          0x00001109        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_copy_data.o)
+ .data          0x00001109        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_clear_bss.o)
+ .data          0x00001109        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__stop_progExec__.o)
+ .data          0x00001109        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_endless_loop__.o)
+ .data          0x00001109        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_unexpected_.o)
+                0x0000110a                . = ALIGN (0x2)
+ *fill*         0x00001109        0x1 00
+                0x0000110a                _edata = .
+                0x00004d00                PROVIDE (__data_load_start, LOADADDR (.data))
+                0x0000000a                PROVIDE (__data_size, SIZEOF (.data))
+
+.bss            0x0000110a      0x180 load address 0x00004d0a
+                0x0000110a                PROVIDE (__bss_start, .)
+ *(.bss .bss.*)
+ .bss           0x0000110a        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16/crt0ivtbl16.o
+ .bss           0x0000110a        0x0 build/src/codingStateMachine.o
+ .bss           0x0000110a       0xde build/src/main.o
+                0x0000110a                i
+                0x0000110c                rcv
+                0x0000110e                humidity
+                0x00001110                RXData
+                0x00001116                buf_idx
+                0x00001118                temp_buf
+                0x000011e0                vcc
+                0x000011e2                temp_ext
+                0x000011e4                sample2
+                0x000011e6                sample1
+ .bss           0x000011e8        0x0 build/src/framingEngine.o
+ .bss           0x000011e8        0x0 build/src/lib/pal.o
+ .bss           0x000011e8        0x0 build/src/peripherals/msp/adc.o
+ .bss           0x000011e8        0x0 build/src/peripherals/msp/ptimer.o
+ .bss           0x000011e8        0x0 build/src/peripherals/msp/analog.o
+ .bss           0x000011e8        0x0 build/src/peripherals/msp/utility.o
+ .bss           0x000011e8        0x0 build/src/peripherals/msp/ctimer.o
+ .bss           0x000011e8        0x0 build/src/peripherals/msp/gpio.o
+ .bss           0x000011e8        0x0 build/src/peripherals/msp/interrupt.o
+ .bss           0x000011e8        0x0 build/src/peripherals/msp/f1611_timer.o
+ .bss           0x000011e8        0x0 build/src/peripherals/msp/comparator.o
+ .bss           0x000011e8        0x0 build/src/peripherals/msp/reference.o
+ .bss           0x000011e8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_reset_vector__.o)
+ .bss           0x000011e8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__watchdog_support.o)
+ .bss           0x000011e8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__init_stack.o)
+ .bss           0x000011e8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__low_level_init.o)
+ .bss           0x000011e8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_copy_data.o)
+ .bss           0x000011e8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_clear_bss.o)
+ .bss           0x000011e8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__stop_progExec__.o)
+ .bss           0x000011e8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_endless_loop__.o)
+ .bss           0x000011e8        0x0 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_unexpected_.o)
+ *(COMMON)
+ COMMON         0x000011e8       0x2c build/src/codingStateMachine.o
+                0x000011e8                csm_state
+ COMMON         0x00001214       0x6e build/src/main.o
+                0x00001214                fe_state
+                0x00001280                xmit
+ COMMON         0x00001282        0x8 build/src/lib/pal.o
+                0x00001282                pal_captureTimerCbPtr
+                0x00001284                timer_periodicCbPtr
+                0x00001286                timer_captureCbPtr
+                0x00001288                pal_periodicTimerCbPtr
+                0x0000128a                . = ALIGN (0x2)
+                0x0000128a                PROVIDE (__bss_end, .)
+                0x00000180                PROVIDE (__bss_size, SIZEOF (.bss))
+
+.noinit         0x0000128a        0x2 load address 0x00004d0a
+                0x0000128a                PROVIDE (__noinit_start, .)
+ *(.noinit .noinit.*)
+ .noinit.crt0   0x0000128a        0x2 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__watchdog_support.o)
+                0x0000128a                __wdt_clear_value
+                0x0000128c                . = ALIGN (0x2)
+                0x0000128c                PROVIDE (__noinit_end, .)
+                0x0000128c                . = ALIGN (0x2)
+                0x0000128c                _end = .
+
+.infomem        0x00001000        0x0
+ *(.infomem)
+                0x00001000                . = ALIGN (0x2)
+ *(.infomem.*)
+
+.infomemnobits  0x00001000        0x0
+ *(.infomemnobits)
+                0x00001000                . = ALIGN (0x2)
+ *(.infomemnobits.*)
+
+.infoa
+ *(.infoa .infoa.*)
+
+.infob
+ *(.infob .infob.*)
+
+.infoc
+ *(.infoc .infoc.*)
+
+.infod
+ *(.infod .infod.*)
+
+.vectors        0x0000ffe0       0x20
+                0x0000ffe0                PROVIDE (__vectors_start, .)
+ *(.vectors*)
+ .vectors       0x0000ffe0       0x20 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16/crt0ivtbl16.o
+                0x0000ffe0                __ivtbl_16
+                0x00010000                _vectors_end = .
+
+.fartext        0x00000000        0x0
+                0x00000000                . = ALIGN (0x2)
+ *(.fartext)
+                0x00000000                . = ALIGN (0x2)
+ *(.fartext.*)
+                0x00000000                _efartext = .
+
+.profiler
+ *(.profiler)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x11c
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x14 build/src/codingStateMachine.o
+ .debug_aranges
+                0x00000014       0x18 build/src/main.o
+ .debug_aranges
+                0x0000002c       0x14 build/src/framingEngine.o
+ .debug_aranges
+                0x00000040       0x14 build/src/lib/pal.o
+ .debug_aranges
+                0x00000054       0x14 build/src/peripherals/msp/analog.o
+ .debug_aranges
+                0x00000068       0x14 build/src/peripherals/msp/utility.o
+ .debug_aranges
+                0x0000007c       0x14 build/src/peripherals/msp/gpio.o
+ .debug_aranges
+                0x00000090       0x14 build/src/peripherals/msp/f1611_timer.o
+ .debug_aranges
+                0x000000a4       0x14 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__watchdog_support.o)
+ .debug_aranges
+                0x000000b8       0x14 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__init_stack.o)
+ .debug_aranges
+                0x000000cc       0x14 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_copy_data.o)
+ .debug_aranges
+                0x000000e0       0x14 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_clear_bss.o)
+ .debug_aranges
+                0x000000f4       0x14 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_endless_loop__.o)
+ .debug_aranges
+                0x00000108       0x14 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_unexpected_.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x1f0a
+ *(.debug_info)
+ .debug_info    0x00000000      0x5ba build/src/codingStateMachine.o
+ .debug_info    0x000005ba      0x7aa build/src/main.o
+ .debug_info    0x00000d64      0x34f build/src/framingEngine.o
+ .debug_info    0x000010b3      0x2f3 build/src/lib/pal.o
+ .debug_info    0x000013a6       0xce build/src/peripherals/msp/analog.o
+ .debug_info    0x00001474      0x267 build/src/peripherals/msp/utility.o
+ .debug_info    0x000016db      0x353 build/src/peripherals/msp/gpio.o
+ .debug_info    0x00001a2e      0x224 build/src/peripherals/msp/f1611_timer.o
+ .debug_info    0x00001c52       0x74 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__watchdog_support.o)
+ .debug_info    0x00001cc6       0x74 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__init_stack.o)
+ .debug_info    0x00001d3a       0x74 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_copy_data.o)
+ .debug_info    0x00001dae       0x74 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_clear_bss.o)
+ .debug_info    0x00001e22       0x74 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_endless_loop__.o)
+ .debug_info    0x00001e96       0x74 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_unexpected_.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0xab4
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x267 build/src/codingStateMachine.o
+ .debug_abbrev  0x00000267      0x1fe build/src/main.o
+ .debug_abbrev  0x00000465      0x149 build/src/framingEngine.o
+ .debug_abbrev  0x000005ae      0x118 build/src/lib/pal.o
+ .debug_abbrev  0x000006c6        0x1 build/src/peripherals/msp/adc.o
+ .debug_abbrev  0x000006c7        0x1 build/src/peripherals/msp/ptimer.o
+ .debug_abbrev  0x000006c8       0x8a build/src/peripherals/msp/analog.o
+ .debug_abbrev  0x00000752       0xb0 build/src/peripherals/msp/utility.o
+ .debug_abbrev  0x00000802        0x1 build/src/peripherals/msp/ctimer.o
+ .debug_abbrev  0x00000803      0x112 build/src/peripherals/msp/gpio.o
+ .debug_abbrev  0x00000915        0x1 build/src/peripherals/msp/interrupt.o
+ .debug_abbrev  0x00000916      0x124 build/src/peripherals/msp/f1611_timer.o
+ .debug_abbrev  0x00000a3a        0x1 build/src/peripherals/msp/comparator.o
+ .debug_abbrev  0x00000a3b        0x1 build/src/peripherals/msp/reference.o
+ .debug_abbrev  0x00000a3c       0x14 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__watchdog_support.o)
+ .debug_abbrev  0x00000a50       0x14 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__init_stack.o)
+ .debug_abbrev  0x00000a64       0x14 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_copy_data.o)
+ .debug_abbrev  0x00000a78       0x14 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_clear_bss.o)
+ .debug_abbrev  0x00000a8c       0x14 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_endless_loop__.o)
+ .debug_abbrev  0x00000aa0       0x14 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_unexpected_.o)
+
+.debug_line     0x00000000      0xb8c
+ *(.debug_line)
+ .debug_line    0x00000000      0x1a6 build/src/codingStateMachine.o
+ .debug_line    0x000001a6      0x181 build/src/main.o
+ .debug_line    0x00000327      0x16a build/src/framingEngine.o
+ .debug_line    0x00000491      0x124 build/src/lib/pal.o
+ .debug_line    0x000005b5        0x0 build/src/peripherals/msp/adc.o
+ .debug_line    0x000005b5        0x0 build/src/peripherals/msp/ptimer.o
+ .debug_line    0x000005b5       0xbf build/src/peripherals/msp/analog.o
+ .debug_line    0x00000674       0xe3 build/src/peripherals/msp/utility.o
+ .debug_line    0x00000757        0x0 build/src/peripherals/msp/ctimer.o
+ .debug_line    0x00000757      0x10e build/src/peripherals/msp/gpio.o
+ .debug_line    0x00000865        0x0 build/src/peripherals/msp/interrupt.o
+ .debug_line    0x00000865       0xfc build/src/peripherals/msp/f1611_timer.o
+ .debug_line    0x00000961        0x0 build/src/peripherals/msp/comparator.o
+ .debug_line    0x00000961        0x0 build/src/peripherals/msp/reference.o
+ .debug_line    0x00000961       0x5c d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__watchdog_support.o)
+ .debug_line    0x000009bd       0x5a d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(__init_stack.o)
+ .debug_line    0x00000a17       0x60 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_copy_data.o)
+ .debug_line    0x00000a77       0x60 d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_clear_bss.o)
+ .debug_line    0x00000ad7       0x5b d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_endless_loop__.o)
+ .debug_line    0x00000b32       0x5a d:/cygwin/opt/msp430/bin/../lib/gcc/msp430/4.6.3/mmpy-16\libcrt0.a(_unexpected_.o)
+
+.debug_frame    0x00000000      0x478
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xfa build/src/codingStateMachine.o
+ .debug_frame   0x000000fa       0xb4 build/src/main.o
+ .debug_frame   0x000001ae       0x94 build/src/framingEngine.o
+ .debug_frame   0x00000242       0x9c build/src/lib/pal.o
+ .debug_frame   0x000002de       0x36 build/src/peripherals/msp/analog.o
+ .debug_frame   0x00000314       0x66 build/src/peripherals/msp/utility.o
+ .debug_frame   0x0000037a       0x64 build/src/peripherals/msp/gpio.o
+ .debug_frame   0x000003de       0x9a build/src/peripherals/msp/f1611_timer.o
+
+.debug_str      0x00000000      0xdb3
+ *(.debug_str)
+ .debug_str     0x00000000      0x3f0 build/src/codingStateMachine.o
+                                0x424 (size before relaxing)
+ .debug_str     0x000003f0      0x3cf build/src/main.o
+                                0x72b (size before relaxing)
+ .debug_str     0x000007bf       0xeb build/src/framingEngine.o
+                                0x343 (size before relaxing)
+ .debug_str     0x000008aa      0x1ed build/src/lib/pal.o
+                                0x3a6 (size before relaxing)
+ .debug_str     0x00000a97       0x51 build/src/peripherals/msp/analog.o
+                                0x179 (size before relaxing)
+ .debug_str     0x00000ae8      0x119 build/src/peripherals/msp/utility.o
+                                0x28b (size before relaxing)
+ .debug_str     0x00000c01       0xc3 build/src/peripherals/msp/gpio.o
+                                0x24c (size before relaxing)
+ .debug_str     0x00000cc4       0xef build/src/peripherals/msp/f1611_timer.o
+                                0x263 (size before relaxing)
+
+.debug_loc      0x00000000      0x61c
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x1f8 build/src/codingStateMachine.o
+ .debug_loc     0x000001f8       0xdd build/src/main.o
+ .debug_loc     0x000002d5       0xee build/src/framingEngine.o
+ .debug_loc     0x000003c3       0xcf build/src/lib/pal.o
+ .debug_loc     0x00000492        0xb build/src/peripherals/msp/analog.o
+ .debug_loc     0x0000049d        0xb build/src/peripherals/msp/utility.o
+ .debug_loc     0x000004a8      0x111 build/src/peripherals/msp/gpio.o
+ .debug_loc     0x000005b9       0x63 build/src/peripherals/msp/f1611_timer.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000       0x24
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x18 build/src/codingStateMachine.o
+ .debug_ranges  0x00000018        0xc build/src/main.o
+                0x00003900                PROVIDE (__stack, (ORIGIN (ram) + 0x2800))
+                0x00004d00                PROVIDE (__data_start_rom, _etext)
+                0x00004d0a                PROVIDE (__data_end_rom, (_etext + SIZEOF (.data)))
+OUTPUT(out.elf elf32-msp430)
